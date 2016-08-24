@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+</head>
+<script src="http://www.w3school.com.cn/jquery/jquery-1.11.1.min.js"></script>
+<script>
+    $(function(){
+        $("#myElementId").width(500);
+        $("#myElementId").height(200);
+
+
+      $("#myElementId").css("background-color", "red").children().css("background-color", "yellow");
+        $("#myElementId").animate({
+            left:'250px',
+            opacity:'0.5',
+            height:'150px',
+            width:'150px'
+
+        });
+
+    })
+
+</script>
+<body>
+  <div id="myElementId" style="position: absolute">
+      <h1>我的样式是jQery 写的</h1>
+  </div>
+  <!--<script>-->
+      <!--$(document).ready(function() {-->
+         <!---->
+      <!--})-->
+  <!--</script>-->
+</body>
+</html>
+
